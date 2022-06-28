@@ -1,0 +1,48 @@
+.stv-radio-buttons-wrapper {
+  clear: both;
+  display: inline-block;
+}
+
+.stv-radio-button {
+  position: absolute;
+  left: -9999em;
+  top: -9999em;
+}
+.stv-radio-button + label {
+  float: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 0px;
+  color: #000;
+  background-color: #E6ECFD;
+  margin: 0 10px 15px 0px;
+  border-radius: 50px;
+}
+.stv-radio-button + label:first-of-type {
+}
+.stv-radio-button + label:last-of-type {
+}
+.stv-radio-button:checked + label {
+  background-color: #bbcaf5;
+}
+.scoure-box {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  border: 2px dashed #e1e1e1;
+  padding: 10px;
+  width: 100px;
+  min-height: 50px;
+  text-align: center;
+}
+.show-value {
+display: block;
+margin-top: 10px;
+}
+.row > .col-md-6 > label {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+/* Radio Button offScreen Issue */
+input[type="radio"]{display:none;}

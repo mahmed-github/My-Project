@@ -1,0 +1,403 @@
+<div class="container" id="rates">
+  <form action="">
+    <h1 id="cat1">Category 1:  Social Support 
+    </h1>
+    <h4>1. With whom did you live 
+    </h4>
+    <input type="radio" id="C1Q1A" name="C1Q1" value="0.0" onclick="alone()">
+    <label for="C1Q1A" class="GSRLabel">Alon</label>
+    <!-- -->
+    <br>            
+    <input type="radio" id="C1Q1B" name="C1Q1" value="0.0" onclick="alone()">
+    <label for="C1Q1B" class="GSRLabel">Family or care Taker</label>
+    <br>
+    <!---->
+    <input type="radio" id="C1Q1C" name="C1Q1" value="0.5" onclick="alone()">
+    <label for="C1Q1C" class="GSRLabel">Institution</label>
+    <br>
+    <!---->
+    <!-- Q 1 End -->
+    <br>
+    <div id="C1Q2Hide">
+      <h4>2. how many times it will be someone available to help you if you are confinated in bed?
+      </h4>
+      <input type="radio" id="C1Q2A" name="C1Q2" value="0.5">
+      <label for="C1Q2A">Always, almost everytime </label>
+      <br>
+      <!---->
+      <input type="radio" id="C1Q2B" name="C1Q2" value="1.0">
+      <label for="C1Q2B">Sometimes, rarely, never </label>
+      <br>
+    </div>
+    Result: 
+    <span id="res1">..</span>
+    <hr>  
+    <!----------  Category 1 End ------------->
+    <!----------  Category 2 Start ------------->            
+    <h1> Category 2: Previous admissions 
+    </h1>
+    <h4>1. Past 6 month 
+    </h4>
+    <input type="radio" id="C2Q1A" name="C2Q1" value="0.0">
+    <label for="C2Q1A">Past 6 month  </label>
+    <br>
+    <!---->
+    <input type="radio" id="C2Q1B" name="C2Q1" value="0.5">
+    <label for="C2Q1B">Visit to ER</label>
+    <br>
+    <!---->
+    <input type="radio" id="C2Q1C" name="C2Q1" value="1.0">
+    <label for="C2Q1C">Hospitalization </label>
+    <br>
+    Result: 
+    <span id="res2">..</span>
+    <!----------  Category 2 End------------->
+    <h1>Category 3: Falls
+    </h1>
+    <h4>1. Past 12 month
+    </h4>
+    <input type="radio" id="C3Q1A" name="C3Q1" value="0.0">
+    <label for="C3Q1A"> None</label>
+    <br>
+    <!---->
+    <input type="radio" id="C3Q1B" name="C3Q1" value="0.5">
+    <label for="C3Q1B"> 1 Fall</label>
+    <br>
+    <!---->
+    <input type="radio" id="C3Q1C" name="C3Q1" value="1.0">
+    <label for="C3Q1C"> ≥ 2 falls </label>
+    <br>
+    Result: 
+    <span id="res3">..</span>  
+    <!----------  Category 3 End------------->   
+    <h1> Category 4: Medications 
+    </h1>
+    <h4>1. continuos use 
+    </h4>
+    <input type="radio" id="C4Q1A" name="C4Q1" value="0.0">
+    <label for="C4Q1A"> &lt; 5 </label>
+    <br>
+    <!---->
+    <input type="radio" id="C4Q1B" name="C4Q1" value="0.5">
+    <label for="C4Q1B"> 5 - 9</label>
+    <br>
+    <!---->
+    <input type="radio" id="C4Q1C" name="C4Q1" value="1.0">
+    <label for="C4Q1C"> ≥ 10 </label>
+    <br>
+    Result: 
+    <span id="res4">..</span>          
+    <hr>
+    <!----------  Category 4 End------------->  
+    <!----------  Category 5 Start-------------> 
+    <h1>Category 5 : Functionality (Katz Index of Independence in Activities of Daily Living3)
+    </h1>
+    <h4>1. Bath:  bath alone or need help only in one part of the body 
+    </h4>
+    <input type="radio" id="C5Q1A" name="C5Q1" value="1.0">
+    <label for="C5Q1A"> No </label> 
+    <br>
+    <!---->
+    <input type="radio" id="C5Q1B" name="C5Q1" value="0.0">
+    <label for="C5Q1B">Yes</label>
+    <br>
+    <!----- Q 1 End ---->
+    <h4>2. Dress: get the clothes by yourself in the closet and dress by yourself 
+    </h4>
+    <input type="radio" id="C5Q2A" name="C5Q2" value="1.0">
+    <label for="C5Q2A">No</label>
+    <br>
+    <!---->
+    <input type="radio" id="C5Q2B" name="C5Q2" value="0.0">
+    <label for="C5Q2B">Yes</label>
+    <br>
+    <!----- Q 2 End ---->
+    <h4>3. Toalete: go to the toillete and get out, dress up, clean the genital area without any help 
+    </h4>
+    <input type="radio" id="C5Q3A" name="C5Q3" value="1.0">
+    <label for="C5Q3A">No</label>
+    <br>
+    <!---->
+    <input type="radio" id="C5Q3B" name="C5Q3" value="0.0">
+    <label for="C5Q3B">Yes</label>
+    <!----- Q 3 End ---->
+    <h4>4. Mobility: get in and get out of the bed without any help. Mechanical transfer aids are acceptable.
+    </h4>
+    <input type="radio" id="C5Q4A" name="C5Q4" value="1.0">
+    <label for="C5Q4A">No</label>
+    <br>
+    <!---->
+    <input type="radio" id="C5Q4B" name="C5Q4" value="0.0">
+    <label for="C5Q4B">Yes</label>    
+    <!----- Q 4 End ---->
+    <h4>5. urinary continence: exercises complete self-control over urination and defecation.
+    </h4>
+    <input type="radio" id="C5Q5A" name="C5Q5" value="1.0">
+    <label for="C5Q5A">No</label>
+    <br>
+    <!---->
+    <input type="radio" id="C5Q5B" name="C5Q5" value="0.0">
+    <label for="C5Q5B">Yes</label>    
+    <!----- Q 5 End ----> 
+    <h4>6. Eat: takes food from a plate to mouth unaided.
+    </h4>
+    <input type="radio" id="C5Q6A" name="C5Q6" value="1.0">
+    <label for="C5Q6A">No</label>
+    <br>
+    <!---->
+    <input type="radio" id="C5Q6B" name="C5Q6" value="0.0">
+    <label for="C5Q6B">Yes</label> 
+    <br>
+    Result: 
+    <span id="res5">..</span>
+    <hr>   
+    <!----- Q 6 End ---->        
+    <!----------  Category 5 End-------------> 
+    <!----------  Category 6 Star ------------> 
+    <h1> Category 6: 
+      <br> Cognitive Status (Education-corrected cognitive screener
+      <sup>4</sup>) 
+    </h1>                            
+    <i>Patient is unable to speak
+    </i> 
+    <br>
+    <small>Time orientation </small> 
+    <br>
+    <h4>1. Today's date 
+    </h4>
+    <input type="radio" id="C6Q1A" name="C6Q1" value="1.0">
+    <label for="C6Q1A">Yes</label>   
+    <br>
+    <!---->  
+    <input type="radio" id="C6Q1B" name="C6Q1" value="0.0">
+    <label for="C6Q1B">No</label>
+    <br>
+    <!---->          
+    <!----- Q 1 End ---->  
+    <h4> 2. Month
+    </h4>
+    <input type="radio" id="C6Q2A" name="C6Q2" value="1.0">
+    <label for="C6Q2A">Yes</label>  
+    <br>
+    <!---->   
+    <input type="radio" id="C6Q2B" name="C6Q2" value="0.0">
+    <label for="C6Q2B">No</label>    
+    <br>
+    <!----- Q 2 End ---->      
+    <h4>3. Year
+    </h4>
+    <input type="radio" id="C6Q3A" name="C6Q3" value="1.0">
+    <label for="C6Q3A">Yes</label>  
+    <br>
+    <!---->   
+    <input type="radio" id="C6Q3B" name="C6Q3" value="0.0">
+    <label for="C6Q3B">No</label>  
+    <br>
+    <!---->       
+    <!----- Q 3 End ---->   
+    <h4>4. CARRO
+    </h4>
+    <input type="radio" id="C6Q4A" name="C6Q4" value="1.0">
+    <label for="C6Q4A">Yes</label>  
+    <br>
+    <!---->   
+    <input type="radio" id="C6Q4B" name="C6Q4" value="0.0">
+    <label for="C6Q4B">No</label>  
+    <br>
+    <!----> 
+    <!----- Q 4 End ---->
+    <h4>5. VASE
+    </h4>
+    <input type="radio" id="C6Q5A" name="C6Q5" value="1.0">
+    <label for="C6Q5A">Yes</label>  
+    <br>
+    <!---->   
+    <input type="radio" id="C6Q5B" name="C6Q5" value="0.0">
+    <label for="C6Q5B">No</label>  
+    <br>
+    <!----> 
+    <!----- Q 5 End ---->
+    <h4>6. BRICK
+    </h4>
+    <input type="radio" id="C6Q6A" name="C6Q6" value="1.0">
+    <label for="C6Q6A">Yes</label>  
+    <br>
+    <!---->   
+    <input type="radio" id="C6Q6B" name="C6Q6" value="0.0">
+    <label for="C6Q6B">No</label>  
+    <br>
+    <!----> 
+    <!----- Q 6 End ---->  
+    <i>The physician will ask the patient to say as many animal names as possible in 1 minute  
+    </i>
+    <h4> 7. Categorical fluency: animals in 1 min 
+    </h4>
+    <input type="radio" id="C6Q7A" name="C6Q7" value="0.0">
+    <label for="C6Q7A">0-5</label>
+    <br>
+    <!---->
+    <input type="radio" id="C6Q7B" name="C6Q7" value="1.0">
+    <label for="C6Q7B">6-8</label>
+    <br>
+    <!---->   
+    <input type="radio" id="C6Q7C" name="C6Q7" value="2.0">
+    <label for="C6Q7C">9-11</label>
+    <br>
+    <!---->   
+    <input type="radio" id="C6Q7D" name="C6Q7" value="3.0">
+    <label for="C6Q7D">12-14</label>
+    <br>
+    <!---->   
+    <input type="radio" id="C6Q7E" name="C6Q7" value="4.0">
+    <label for="C6Q7E">≥ 15 </label>
+    <br>
+    <!---->      
+    <i> 
+      <small>Remembering the words</small> 
+    </i> 
+    <h4>8. CARRO
+    </h4>
+    <input type="radio" id="C6Q8A" name="C6Q8" value="1.0">
+    <label for="C6Q8A">Yes</label>  
+    <br>
+    <!---->   
+    <input type="radio" id="C6Q8B" name="C6Q8" value="0.0">
+    <label for="C6Q8B">No</label>  
+    <br>
+    <!---->  
+    <h4>9. VASE
+    </h4>
+    <input type="radio" id="C6Q9A" name="C6Q9" value="1.0">
+    <label for="C6Q9A">Yes</label>  
+    <br>
+    <!---->   
+    <input type="radio" id="C6Q9B" name="C6Q9" value="0.0">
+    <label for="C6Q9B">No</label>  
+    <br>
+    <!---->   
+    <h4>10. BRICK
+    </h4>
+    <input type="radio" id="C6Q10A" name="C6Q10" value="1.0">
+    <label for="C6Q10A">Yes</label>  
+    <br>
+    <!---->   
+    <input type="radio" id="C6Q10B" name="C6Q10" value="0.0">
+    <label for="C6Q10B">No</label>  
+    <br>
+    <!---->    
+    <!----- Q 7 End ---->              
+    <hr>
+    <!----------  Category 6 End ---------->
+    <!----------  Category 7 Start ---------->
+    <h1> Category 7 : Health self-evaluation
+    </h1>
+    <h4>1. In general, would you say your health is excellent, very good, good, fair, or bad?" 
+    </h4>
+    <input type="radio" id="C7Q1A" name="C7Q1" value="0.0">
+    <label for="C7Q1A">Excelent, very good</label>  
+    <br>
+    <!---->    
+    <input type="radio" id="C7Q1B" name="C7Q1" value="0.5">
+    <label for="C7Q1B">Good</label>  
+    <br>
+    <!---->     
+    <input type="radio" id="C7Q1C" name="C7Q1" value="1.0">
+    <label for="C7Q1C">Fair, Poor</label>  
+    <br>
+    <!---->   
+    <hr>
+    <!----------  Category 7 End-------------> 
+    <!----------  Category 8 End-------------> 
+    <h1> Category 8 : Depressive symptoms (Geriatric Depression Scale5)
+    </h1>
+    <h4>1. Are you satisfied with your life? 
+    </h4>
+    <input type="radio" id="C8Q1A" name="C8Q1" value="0.0">
+    <label for="C8Q1A">Yes</label>  
+    <br>
+    <!---->
+    <input type="radio" id="C8Q1B" name="C8Q1" value="1.0">
+    <label for="C8Q1B">No</label>  
+    <br>
+    <!---->
+    <!-- Q 1 End -->
+    <h4>2. Have you lost your interest in your activites many times? 
+    </h4>
+    <input type="radio" id="C8Q2A" name="C8Q2" value="1.0">
+    <label for="C8Q2A">Yes</label>  
+    <br>
+    <!---->
+    <input type="radio" id="C8Q2B" name="C8Q2" value="0.0">
+    <label for="C8Q2B">No</label>  
+    <!-- Q 2 End -->
+    <h4>3. Do you fell happy most of time? 
+    </h4>
+    <input type="radio" id="C8Q3A" name="C8Q3" value="0.0">
+    <label for="C8Q3A">Yes</label>  
+    <br>
+    <!---->
+    <input type="radio" id="C8Q3B" name="C8Q3" value="1.0">
+    <label for="C8Q3B">No</label>  
+    <!-- Q 3 End -->   
+    <h4>4. Do you rather stay at home instead of going out and do new things?
+    </h4>
+    <input type="radio" id="C8Q4A" name="C8Q4" value="1.0">
+    <label for="C8Q4A">Yes</label>  
+    <br>
+    <!---->
+    <input type="radio" id="C8Q4B" name="C8Q4" value="0.0">
+    <label for="C8Q4B">No</label>
+    <br>
+    <!---->
+    <!-- Q 4 End -->    
+    <hr>
+    <!----------  Category 8 End-------------> 
+    <!----------  Category 9 Start ----------> 
+    <h1> Category 9 : Status nutricional 
+    </h1>
+    <p> 
+      <strong> Note:</strong> 
+      <i> se o IMC não estiver disponível, substitua-o pela circunferência da panturrilha (CC); CC &lt; 3,10 cm 
+      </i> 
+    </p>
+    <h4>1. Weight loss: ≥ 10kg in the previous year 
+    </h4>
+    <input type="radio" id="C9Q1A" name="C9Q1" value="0.0">
+    <label for="C9Q1A">no weight loss and BMI ≥ 22 </label> 
+    <br>           
+    <!---->
+    <input type="radio" id="C9Q1B" name="C9Q1" value="0.5">
+    <label for="C9Q1B">weight loss or IMC &lt; 22  </label>   
+    <br> 
+    <!---->
+    <input type="radio" id="C9Q1C" name="C9Q1" value="1.0">
+    <label for="C9Q1C">weight loss and IMC &lt; 22  </label> 
+    <br>           
+    <!---->   
+    <hr>
+    <!----------  Category 9 End-------------> 
+    <!----------  Category 10 Start ----------> 
+    <h1> Category 10 : Velocidade de Marcha 
+    </h1>
+    <h4>1. Walk twice 4.5 m at a normal pace (Consider the best performance). 
+    </h4>
+    <input type="radio" id="C10Q1A" name="C10Q1" value="0.0">
+    <label for="C10Q1A">≤ 4,4 seconds </label> 
+    <br>           
+    <!---->
+    <input type="radio" id="C10Q1B" name="C10Q1" value="0.5">
+    <label for="C10Q1B">4,5 - 7,5 seconds </label>   
+    <br> 
+    <!---->
+    <input type="radio" id="C10Q1C" name="C10Q1" value="1.0">
+    <label for="C10Q1C">≥ 7,6 seconds or unable to walk </label> 
+    <br>           
+    <!---->   
+    <hr>
+    <!----------  Category 10 End------------->             
+  </form>
+</div>
+<button class="btn btn-outline-primary" onclick="add()">Add +</button>
+<h2>Result : 
+  <input type="text" id="answer" readonly="readonly">
+</h2>
