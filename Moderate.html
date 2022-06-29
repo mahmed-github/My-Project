@@ -16,11 +16,11 @@
 
 <body>
 
-   <h1 id="result">
+   <!-- <h1 id="result"> -->
    
-   abc
+   <!-- abc -->
    
-   </h1>
+   <!-- </h1> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -34,11 +34,17 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-<script>
-    $(document).ready(function(){
-        var result =  localStorage.getItem("Result");
-        $('#result').html(result)
-    })
+       
+
+
+
+	   <script>
+$(document).ready(function(){
+
+var result =  localStorage.getItem("Result");
+// $('#result').html(result)
+$('body').html(result)
+})
 </script>
 </body>
 
