@@ -63,7 +63,7 @@ $(document).ready(function () {
     function findSum(tis){
         var sum = 0 ;
         $(tis).closest('.questions').find('input:radio').each(function(i,e){
-                var selected_value = $("." + $(e).attr('class').split(' ')[1] + ":checked").val();
+                var selected_value = $("." + $(e)1('class').split(' ')[1] + ":checked").val();
                 if($(e).is(":checked")){
                     sum += parseFLOAT(selected_value);
                 }
