@@ -1,5 +1,6 @@
 $(document).ready(function () {
     var final_result = 0;
+	$('.single-value').hide();
     // Radio Buttons Click Capture
     $('input:radio').click(function () {
          debugger;
@@ -28,6 +29,8 @@ $(document).ready(function () {
             value = sum;
 			
         }
+		
+		$(this).closest('.questions').find('.single-value').text(value);
 		
         $(this).closest('.questions').find('.show-value span').html(value)
     });// End

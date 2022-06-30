@@ -43,8 +43,11 @@ $(document).ready(function(){
 
 var result =  localStorage.getItem("Result");
 // $('#result').html(result)
+	
 $('body').html(result);
-$('input[type="radio"]').attr('disabled', true);
+    $('input[type="radio"]').attr('disabled', true);
+    $("button#submit").css("display", "none");
+    $('.single-value').show();
 })
 </script>
 </body>
